@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import video from "../data/video.js";
 import ContentDetail from "./ContentDetail.js";
 import ContentVoteButton from "./UpvoteDownvoteButton.js";
