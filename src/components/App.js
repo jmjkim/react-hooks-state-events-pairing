@@ -1,6 +1,10 @@
+import React, { useState } from "react";
 import video from "../data/video.js";
+import ContentDetail from "./ContentDetail.js";
+import ContentVoteButton from "./UpvoteDownvoteButton.js";
+import DisplayComments from "./DisplayComments.js";
 
-function App() {
+export default function App() {
   console.log("Here's your data:", video);
 
   return (
@@ -13,8 +17,10 @@ function App() {
         allowFullScreen
         title="Thinking in React"
       />
+      <ContentDetail title={ video.title } views={ video.views } createdAt={ video.createdAt } />
+      <ContentVoteButton upvotes={ video.upvotes } downvotes={ video.downvotes } />
+      <DisplayComments comments={ video.comments }/>
     </div>
-  );
-}
 
-export default App;
+    );
+}

@@ -1,7 +1,7 @@
 const video = {
   id: 1,
   title: "React Today and Tomorrow and 90% Cleaner React With Hooks",
-  embedUrl: "https://www.youtube.com/embed/dpw9EHDh2bM",
+  embedUrl: "https://www.youtube.com/watch?v=dpw9EHDh2bM",
   views: 730707,
   createdAt: "Oct 26, 2018",
   upvotes: 9210,
